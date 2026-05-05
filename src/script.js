@@ -23,14 +23,14 @@ searchBtn.addEventListener("click",() => {
     // 4. Jämför texten med varje namn i arrayen
     if (person === searchValue) {
     // 5. Om du hittar en match, skriv ut "Namn hittades!" i resultDisplay, ändra found till true
-    resultDisplay.innerText = "Namn hittades!";
+    resultDisplay.innerHTML = "Namn hittades!";
         found = true;
         break;
       }
     }
     // 6. Om du efter loopen inte hittat något, skriv ut "Namn hittades inte." och gör found till false igen.
     if (!found) {
-      resultDisplay.innerText = "Namn hittades inte.";
+      resultDisplay.innerHTML = "Namn hittades inte.";
     }
     });
 }
